@@ -7,7 +7,7 @@ extern "C" {
 
 void BuildSkulltulaMessage(uint16_t* textId, bool* loadFromMessageTable) {
     CustomMessage msg =
-        CustomMessage("You got a %rGold Skulltula Token%w!&You've collected %r[[d]]%w |token|tokens|&in total!",
+        CustomMessage("¡Obtienes un %rToken de&Skulltula Dorada%w!&¡Has conseguido %r[[d]]%w |token|tokens|&en total!",
                       "Ein %rGoldenes Skulltula-Symbol%w!&Du hast nun insgesamt %r[[d]]&%w|Goldenes "
                       "Skulltula-Symbol|Goldene Skulltula-Symbole|&gesammelt!",
                       "Vous obtenez un %rSymbole de&Skulltula d'or%w! Vous avez&collecté %r[[d]]%w |symbole|symboles| "
@@ -34,7 +34,7 @@ void BuildSkulltulaMessage(uint16_t* textId, bool* loadFromMessageTable) {
 
 void BuildHeartContainerMessage(uint16_t* textId, bool* loadFromMessageTable) {
     CustomMessage msg = CustomMessage(
-        "You got a %rHeart Container%w!&You've collected %r[[heartContainerCount]]%w containers&in total!",
+        "¡Obtienes un %rContenedor de&Corazón%w!&¡Has conseguido %r[[heartContainerCount]]%w contenedores&en total!",
         "Ein %rHerzcontainer%w!&Du hast nun insgesamt %r[[heartContainerCount]]%w&Herzcontainer gesammelt!",
         "Vous obtenez un %rCoeur&d'Energie%w! Vous en avez&collecté %r[[heartContainerCount]]%w en tout!");
     msg.Replace("[[heartContainerCount]]", std::to_string(gSaveContext.ship.stats.heartContainers + 1));
@@ -45,7 +45,7 @@ void BuildHeartContainerMessage(uint16_t* textId, bool* loadFromMessageTable) {
 
 void BuildHeartPieceMessage(uint16_t* textId, bool* loadFromMessageTable) {
     CustomMessage msg =
-        CustomMessage("You got a %rHeart Piece%w!&You've collected %r[[heartPieceCount]]%w pieces&in total!",
+        CustomMessage("¡Obtienes una %rPieza de Corazón%w!&¡Has conseguido %r[[heartPieceCount]]%w piezas&en total!",
                       "Ein %rHerzteil%w!&Du hast nun insgesamt %r[[heartPieceCount]]%w&Herzteile gesammelt!",
                       "Vous obtenez un %rQuart de&Coeur%w! Vous en avez collecté&%r[[heartPieceCount]]%w en tout!",
                       TEXTBOX_TYPE_BLUE);
